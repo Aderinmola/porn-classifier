@@ -1,0 +1,22 @@
+{
+    
+    "version": "1.0",
+    "name": "Test",
+    "description": "Testing an extension",
+    
+    "manifest_version": 2,
+    "permissions": [
+        "activeTab"
+    ],
+
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+
+}

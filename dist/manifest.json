@@ -1,0 +1,22 @@
+{
+    
+    "version": "1.0",
+    "name": "Shield plus",
+    "description": "Testing an extension for adult content classification",
+    
+    "manifest_version": 2,
+    "permissions": [
+        "activeTab"
+    ],
+
+    "content_scripts": [
+        {
+            "js": ["./src/content.js"],
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+
+}

@@ -1,0 +1,24 @@
+{
+  "name": "shield-plus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy": "cp src/content.js dist/src/",
+    "build": "parcel build src/content.js -d dist/src -o content"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "clang-format": "^1.5.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.0.0",
+    "nsfwjs": "^2.3.0"
+  }
+}
